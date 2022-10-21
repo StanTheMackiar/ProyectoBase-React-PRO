@@ -21,7 +21,7 @@ export const ShoppingPage = () => {
 
             <ProductCard product={product}>
                 <ProductCard.Image />
-                <ProductCard.Title />
+                <ProductCard.Title title="Hola Mundo"/>
                 <ProductCard.Buttons />
             </ProductCard>
 
