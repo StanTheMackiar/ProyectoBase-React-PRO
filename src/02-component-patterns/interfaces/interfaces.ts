@@ -9,7 +9,13 @@ export interface Product {
     id: string;
     img?: string;
     title: string;
-  }
+}
+
+  
+export interface ProductInCart extends Product {
+  count: number;
+}
+
   
 export interface ProductContextProps {
     counter: number;
@@ -17,7 +23,10 @@ export interface ProductContextProps {
     increaseBy: (value: number) => void;
   }
  
-
+export interface onChangeArgs {
+  product: Product;
+  count: number;
+}
 
 
 export interface ProductCardHOCProps {
